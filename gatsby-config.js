@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'JGB Solutions - Web & Mobile Development Services',
+    title: 'JGB Solutions',
     description: 'Web & Mobile Development Services for small to medium sized businesses.',
     author: '@jgb_solutions',
   },
@@ -18,15 +18,21 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'JGB Solutions',
+        short_name: 'JGB Solutions',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#fb9801',
+        theme_color: '#fb9801',
         display: 'minimal-ui',
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
     },
+    // {
+    //   resolve: 'gatsby-plugin-material-ui',
+    //   // options: {
+    //   //   pathToTheme: 'src/themes/default',
+    //   // },
+    // },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',

@@ -3,7 +3,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-const title = "Web & Mobile Development Services";
+const title = "Services";
 const IndexPage = () => (
   <Layout title={title}>
     <SEO title={title} keywords={['gatsby', 'application', 'react']} />
