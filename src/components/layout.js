@@ -89,7 +89,6 @@ class Layout extends React.Component {
 				url: '/contact'
 			}
 		];
-		window.menu = menu
 		const drawer = (
 			<div>
 				{/* <div className={classes.toolbar} /> */}
