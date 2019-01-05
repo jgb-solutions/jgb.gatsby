@@ -6,11 +6,10 @@ import SEO from '../components/seo';
 import  jgb from '../images/jgb-cartoon.png';
 import { Typography } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
-import orange from '@material-ui/core/colors/orange';
 
-const title = "Web & Mobile Development Services";
+const title = "Some Of Our Recent Works";
 const IndexPage = () => (
-  	<Layout title={title} bgColor={orange[500]}>
+  <Layout title={title}>
     	<SEO title={title} keywords={['gatsby', 'application', 'react']} />
 		<Grid container>
 			<Grid item sm={6}>
@@ -50,7 +49,7 @@ const IndexPage = () => (
 				</Typography>
 			</Grid>
 		</Grid>
-  	</Layout>
+  </Layout>
 )
 
 export default IndexPage
