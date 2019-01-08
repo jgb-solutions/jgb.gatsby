@@ -12,7 +12,11 @@ const title = "Web & Mobile Development Services";
 const IndexPage = () => (
   	<Layout title={title} bgColor={orange[500]}>
     	<SEO title={title} keywords={['gatsby', 'application', 'react']} />
+
 		<Grid container>
+			<Grid item sm={12}>
+				<h1 style={{textAlign: 'center'}}>{title}</h1>
+			</Grid>
 			<Grid item sm={6}>
 				<img src={jgb}  style={{
 					maxWidth: '100%',
@@ -21,7 +25,7 @@ const IndexPage = () => (
 				}}/>
 			</Grid>
 			<Grid item sm={6}>
-				<h1 class="display-3">Who I Am</h1>
+				<h2>Who I Am</h2>
 				<Typography paragraph>
 					<p>
 						My name is Jean Gérard Bousiquot, a Software Developer from Delmas, Haiti.

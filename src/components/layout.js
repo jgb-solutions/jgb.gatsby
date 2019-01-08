@@ -25,13 +25,14 @@ import HomeIcon from '@material-ui/icons/Home';
 import BuildIcon from '@material-ui/icons/Build';
 import WorkIcon from '@material-ui/icons/Work';
 
-import logo from '../images/logo-jgb-solutions.png'
+import logo from '../images/logo-jgb-solutions-21k.png'
 
 const drawerWidth = 240;
 
 const styles = theme => ({
   	root: {
 		display: 'flex',
+		height: '100%'
 		// maxWidth: '1000px',
 		// marginLeft: 'auto',
 		// marginRight: 'auto'
@@ -155,7 +156,7 @@ class Layout extends React.Component {
 				render={data => (
 					<div className={classes.root}>
 						<CssBaseline />
-						<AppBar
+						{/* <AppBar
 							position="fixed"
 							className={classes.appBar}
 							style={{backgroundColor: orange[600],color: '#000'}}>
@@ -172,7 +173,7 @@ class Layout extends React.Component {
 								{this.props.title}
 								</Typography>
 							</Toolbar>
-						</AppBar>
+						</AppBar> */}
 						<nav className={classes.drawer}>
 							{/* The implementation can be swapped with js to avoid SEO duplication of links. */}
 							<Hidden smUp implementation="css">
@@ -200,7 +201,7 @@ class Layout extends React.Component {
 							</Hidden>
 						</nav>
 						<main className={classes.content} style={{backgroundColor: bgColor}}>
-							<div className={classes.toolbar} />
+							{/* <div className={classes.toolbar} /> */}
 							{/* <Typography paragraph>
 								ullamcorper morbi tincidunt. Lorem donec massa sapien faucibus et molestie ac.
 							</Typography>
@@ -219,11 +220,7 @@ class Layout extends React.Component {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-  classes: PropTypes.object.isRequired,
-  // Injected by the documentation to work in an iframe.
-  // You won't need it on your project.
-  container: PropTypes.object,
-  theme: PropTypes.object.isRequired,
+  classes: PropTypes.object.isRequired
 };
 
 export default withStyles(styles, { withTheme: true })(Layout);
